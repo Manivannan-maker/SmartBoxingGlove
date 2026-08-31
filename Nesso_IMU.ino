@@ -5,8 +5,8 @@
   of the Nesso N1 development kit. The data is formatted for Edge Impulse
   data collection and training, with real-time display visualization.
   
-  @version 1.0 01/11/25
-  @author Arduino Product Experience Team
+  @version 1.0 31--8-2026
+  @author Manivannan sivan
 */
 #include <Arduino_Nesso_N1.h>
 
