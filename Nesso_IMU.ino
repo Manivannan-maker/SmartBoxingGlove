@@ -1,5 +1,5 @@
 /**
-  Motor Boxing Move Data Collection for Edge Impulse
+   Boxing Move Data Collection for Edge Impulse
   Name: Nesso_IMU.ino
   Purpose: This sketch reads 6-axis IMU data from the onboard BMI270 sensor
   of the Nesso N1 development kit. The data is formatted for Edge Impulse
