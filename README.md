@@ -16,6 +16,7 @@ Key features include:
 ---
 
 ## Problem Statement
+![Heading](/Image/Boxing_image1.jpg)
 
 Boxers and fitness enthusiasts often lack objective training metrics during practice sessions. Coaches typically rely on visual observation to evaluate performance, making it difficult to quantify punch frequency, movement patterns, and workout intensity.
 
