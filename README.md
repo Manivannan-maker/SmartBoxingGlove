@@ -16,7 +16,7 @@ Key features include:
 ---
 
 ## Problem Statement
-![Heading](/Image/Boxing_image1.jpg)
+![Heading](/Image/Boxing_image1.jpeg)
 
 Boxers and fitness enthusiasts often lack objective training metrics during practice sessions. Coaches typically rely on visual observation to evaluate performance, making it difficult to quantify punch frequency, movement patterns, and workout intensity.
 
@@ -25,6 +25,8 @@ This project aims to solve this problem by combining Edge AI and wearable sensin
 ---
 
 ## Hardware Used
+
+![Heading](/Image/Boxing_image3.jpeg)
 
 ### Arduino Nesso N1
 
@@ -52,6 +54,8 @@ The machine learning workflow was developed entirely using Edge Impulse.
 
 Motion data was collected using the onboard IMU while the boxing band was worn during training sessions.
 
+![Heading](/Image/Boxing_image4.jpeg)
+
 The following movement classes were recorded:
 
 | Label | Description |
@@ -66,6 +70,7 @@ Each class was captured multiple times to ensure representative training samples
 ---
 
 ## Data Collection Process
+![Heading](/Image/Boxing_image5.jpeg)
 
 1. Connect Arduino Nesso N1 to Edge Impulse Data Forwarder.
 2. Stream accelerometer data to Edge Impulse Studio.
@@ -96,10 +101,12 @@ A neural network classifier was trained using the extracted motion features.
 |------------|----------|
 | Window Size | 1200 ms |
 | Window Increase | 750 ms |
+![Heading](/Image/Boxing_image4.jpeg)
 
 ---
 
 ## Feature Generation
+![Heading](/Image/Boxing_image11.jpeg)
 
 After feature extraction, the Feature Explorer showed clear separation between all boxing movement classes.
 
@@ -117,7 +124,7 @@ This indicated the collected IMU data contained sufficient information for accur
 # Model Training
 
 The classification model was trained directly within Edge Impulse Studio.
-
+![Heading](/Image/Boxing_image6.jpeg)
 ## Training Settings
 
 | Parameter | Value |
@@ -142,13 +149,14 @@ The classification model was trained directly within Edge Impulse Studio.
 ## Training Results
 
 ### Training Accuracy
+![Heading](/Image/Boxing_image7.jpeg)
 
 **100% Accuracy**
 
 The neural network successfully learned the movement patterns associated with all four boxing activities.
 
 ### Classification Performance
-
+![Heading](/Image/Boxing_image8.jpeg)
 The resulting model demonstrated clear separation between:
 
 - Idle
@@ -175,6 +183,7 @@ The model consistently recognised punching movements during real-time testing, d
 # Deployment
 
 After validation, the Edge Impulse model was exported as an Arduino Library and integrated into the Arduino IDE.
+![Heading](/Image/Boxing_image9.jpeg)
 
 The model performs inference directly on the Arduino Nesso N1.
 
@@ -221,6 +230,7 @@ The display colour changes according to detected heart rate:
 | 140-160 BPM | Yellow |
 | Above 160 BPM | Red |
 | No Reading | Black |
+![Heading](/Image/Boxing_image10.jpeg)
 
 This provides a simple visual indication of workout intensity.
 
